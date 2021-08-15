@@ -1,6 +1,6 @@
 const generateREADME = data => {
   let licenseLink = '';
-  let npmInstall = '`npm i`';
+  let npmInstall = 'npm i';
   switch (data.license) {
     case 'MIT':
       licenseLink = 'https://opensource.org/licenses/MIT';
@@ -55,9 +55,8 @@ const generateREADME = data => {
   * [License](#license)
   * [Questions](#questions)
   ## Installation
-  clone the repo:
-  1. clone the repo:${data.installation}
-  2. install dependencies : ${npmInstall}
+    1. clone the repo:${data.installation}
+    2. install dependencies : ${npmInstall}
 
   ## Usage
   ${data.usage}
@@ -65,9 +64,9 @@ const generateREADME = data => {
   ${data.tests}
   ## Contributing
   ${data.contributing}
-  # Contributor Covenant Code of Conduct
+  ### Contributor Covenant Code of Conduct
 
-  ## Our Pledge
+  ### Our Pledge
 
   In the interest of fostering an open and welcoming environment, we as
   contributors and maintainers pledge to make participation in our project and
@@ -76,7 +75,7 @@ const generateREADME = data => {
   level of experience, education, socio-economic status, nationality, personal
   appearance, race, religion, or sexual identity and orientation.
 
-  ## Our Standards
+  ### Our Standards
 
   Examples of behavior that contributes to creating a positive environment
   include:
@@ -98,7 +97,7 @@ const generateREADME = data => {
   * Other conduct which could reasonably be considered inappropriate in a
     professional setting
 
-  ## Our Responsibilities
+  ### Our Responsibilities
 
   Project maintainers are responsible for clarifying the standards of acceptable
   behavior and are expected to take appropriate and fair corrective action in
@@ -110,7 +109,7 @@ const generateREADME = data => {
   permanently any contributor for other behaviors that they deem inappropriate,
   threatening, offensive, or harmful.
 
-  ## Scope
+  ### Scope
 
   This Code of Conduct applies within all project spaces, and it also applies when
   an individual is representing the project or its community in public spaces.
@@ -119,7 +118,7 @@ const generateREADME = data => {
   as an appointed representative at an online or offline event. Representation of
   a project may be further defined and clarified by project maintainers.
 
-  ## Enforcement
+  ### Enforcement
 
   Instances of abusive, harassing, or otherwise unacceptable behavior may be
   reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
@@ -132,7 +131,7 @@ const generateREADME = data => {
   faith may face temporary or permanent repercussions as determined by other
   members of the project's leadership.
 
-  ## Attribution
+  ### Attribution
 
   This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
   available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
@@ -142,7 +141,7 @@ const generateREADME = data => {
   For answers to common questions about this code of conduct, see
   https://www.contributor-covenant.org/faq
   ## License
-  ${data.license}
+  ### This app is licensed under the [${data.license}](${licenseLink}) license.
   ## Questions
   * GitHub: [${data.github}](https://github.com/${data.github})
   * Email: 
