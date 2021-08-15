@@ -15,7 +15,7 @@ const promptUser = () => {
     },
 
     {type: 'input',
-    message: 'How do you install your project?',
+    message: 'Enter your git clone HTTPS for installation instructions?',
     name: 'installation'
     },
 

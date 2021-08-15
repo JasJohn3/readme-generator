@@ -1,5 +1,6 @@
 const generateREADME = data => {
   let licenseLink = '';
+  let npmInstall = '`npm i`';
   switch (data.license) {
     case 'MIT':
       licenseLink = 'https://opensource.org/licenses/MIT';
@@ -40,6 +41,7 @@ const generateREADME = data => {
     default:
       licenseLink = 'https://opensource.org/licenses/MIT';
     }
+    let template =
   `
   [![Generic badge](https://img.shields.io/badge/license-${data.license}-<COLOR>.svg)](#license)
   # ${data.title}
@@ -53,7 +55,10 @@ const generateREADME = data => {
   * [License](#license)
   * [Questions](#questions)
   ## Installation
-  ${data.installation}
+  clone the repo:
+  1. clone the repo:${data.installation}
+  2. install dependencies : ${npmInstall}
+
   ## Usage
   ${data.usage}
   ## Tests
@@ -143,6 +148,6 @@ const generateREADME = data => {
   * Email: 
   [${data.email}](mailto:${data.email})
   `;
-
+    return template;
 }
 module.exports = generateREADME;
